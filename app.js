@@ -12,7 +12,7 @@ app.get("/",function(req, res){
 app.post("/", function(req,res){
     console.log(req.body.cityName); //in terminal
     const city_name = req.body.cityName;
-    const apikey = "19fc06f9701ae6be52bfe0b538a36e64";
+    const apikey = ""; //enter your own api key here
     const tempInFaranheit = "imperial";
     const url ="https://api.openweathermap.org/data/2.5/weather?q="+city_name+ "&units=" + tempInFaranheit+ "&appid=" + apikey;
 
